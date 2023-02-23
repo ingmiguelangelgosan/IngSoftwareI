@@ -20,7 +20,7 @@ public class Archivo {
         try (BufferedReader leerTexto = new BufferedReader(new FileReader(ruta))) {
             String linea;
             while ((linea = leerTexto.readLine()) != null) {
-                String[] palabras = linea.split("\\s+");
+                String[] palabras = linea.split("\\W+");
                 for (String i : palabras) {
                     if (i.equalsIgnoreCase(palabra)) {
                         contador++;
