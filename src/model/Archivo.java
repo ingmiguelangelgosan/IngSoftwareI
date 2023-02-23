@@ -6,7 +6,6 @@ import java.io.IOException;
 
 public class Archivo {
 
-    private String texto;
     private String palabra;
     private String ruta;
 
